@@ -1,0 +1,184 @@
+/* General reset, dark background, and background GIF */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    background-image: url('/Assignment/Sealife2.gif'); /* Path to your background GIF */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #00ffcc;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Default styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Styles for devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Styles for devices with a max width of 480px (smartphones) */
+@media (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* HUD Container */
+.hud-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hud img {
+    max-width: 80%;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hud img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffcc;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.circular-hud {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('/Assignment/Sealife.jpeg'); /* Replace with your image/GIF */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.3); /* Neon-like shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto 20px; /* Center HUD and add space below */
+}
+
+/* Hover effect for circular HUD */
+.circular-hud:hover {
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.8), 0 0 50px rgba(0, 255, 255, 0.5);
+    transform: translateY(-10px) scale(1.05); /* Slight lift and scale effect */
+}
+
+header h1, header h3 {
+    margin: 10px 0;
+    color: #9ec93b; /* Cyan color for a futuristic look */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5); /* Neon text shadow */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font (Orbitron) */
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for h1 and h3 */
+header h1:hover, header h3:hover {
+    color: #ffffff; /* Change text color on hover */
+    text-shadow: 0 0 20px rgb(96, 28, 221), 0 0 40px rgba(61, 221, 12, 0.8); /* Intensify neon glow */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+header h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* Picture element */
+picture img {
+    max-width: 100%;
+    border: 2px solid #8213dd;
+    box-shadow: 0 0 10px #cf0e28;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+picture img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #6b7a42;
+}
+
+/* Video element */
+video {
+    margin-top: 20px;
+    border: 2px solid #8213dd;
+    box-shadow: 0 0 10px cf0e28;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Audio element */
+audio {
+    margin-top: 20px;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+    border-radius: 10px;
+    width: 80%;
+    transition: box-shadow 0.3s ease;
+}
+
+audio:hover {
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #008080;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+    transition: text-shadow 0.3s ease;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #00ffcc;
+    text-decoration: none;
+    border-bottom: 1px solid #00ffcc;
+    transition: color 0.3s, border-bottom-color 0.3s, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: #008080;
+    border-bottom-color: #008080;
+    text-shadow: 0 0 7px #00ffcc, 0 0 14px #00ffcc;
+}

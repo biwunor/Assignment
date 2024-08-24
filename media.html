@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <div class="circular-hud">
+            <span>ASSIGNMENT</span>
+        </div>
+        <h1>About Me</h1>
+        <h1>BONAVENTURE IWUNOR</h1>
+        <h3>Student I.D: <b>ALT/SOE/024/0083</b></h3>
+    </header>
+    
+    <picture>
+        <!-- Image for very large screens -->
+        <source srcset="Mine-500.jpg" media="(max-width: 800px)">
+        <!-- Image for medium screens -->
+        <source srcset="Mine-400.jpg" media="(max-width: 650px)">
+        <!-- Image for small screens -->
+        <source srcset="Mine-300.jpg" media="(max-width: 500px)">
+        <!-- Default/fallback image -->
+        <img src="/Assignment/Mine.jpg" alt="Bonaventure Responsive Image">
+    </picture>
+
+    <h2>Video of Myself</h2>
+    <video controls autoplay loop muted preload="auto" crossorigin="anonymous" width="320" height="240">
+        <source src="/Assignment/Bonaventure.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <source src="video.mov" type="video/mov">
+        <source src="video.wmv" type="video/mnv">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Audio of Myself</h2>
+    <audio controls autoplay loop muted preload="auto" crossorigin="anonymous">
+        <source src="/Assignment/Bonaventure.mp3" type="audio/mp3">
+        <source src="audio/background.ogg" type="audio/ogg">
+        <source src="audio/background.avi" type="audio/avi">
+        <source src="audio/background.flv" type="audio/flv">
+        <source src="audio/background.mkv" type="audio/mkv">
+        <source src="audio/background.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <footer>
+        <p style="text-align: center; margin: 10px 0;">&copy; 2024 V01D. All rights reserved.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; width: 100%; max-width: 800px; margin: auto;">
+            <!-- First Column -->
+            <p style="text-align: left; text-shadow: 2px 2px 4px #000000; margin: 0;">
+                <a href="./form.html" class="footer-link" style="font-weight: bold;">APPLICATION FORM</a>
+            </p>
+            
+            <!-- Second Column -->
+            <p style="text-align: center; text-shadow: 2px 2px 4px #000000; margin: 0;">
+                <a href="./index.html" class="footer-link" style="font-weight: bold;">HOME</a>
+            </p>
+            
+            <!-- Third Column -->
+            <p style="text-align: right; text-shadow: 2px 2px 4px #000000; margin: 0;">
+                <a href="./table.html" class="footer-link">Go To Table</a>
+            </p>
+
+            <!-- Fourth Column -->
+            <p style="text-align: center; text-shadow: 2px 2px 4px #000000; margin: 0;">
+                <a href="./media.html" class="footer-link" style="font-weight: bold;">Top</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

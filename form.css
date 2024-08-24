@@ -1,0 +1,274 @@
+/* Form margin and padding for body and html */
+html, body {  
+    margin: 0;  
+    padding: 0;  
+    height: 100%;  
+    font-family: Arial, sans-serif;  
+    background-image:url('./FuturisticShip.jpg'); /* Dark background for the whole page */  
+    color: #ffffff; /* Light text color */  
+}  
+
+/* Ensure full height is used and maintain layout structure */
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #460b0b;
+    text-align: center; /* Center text alignment for all elements */
+    padding: 20px;
+  }
+
+  /* Default styles for all devices */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Styles for devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Styles for devices with a max width of 480px (smartphones) */
+@media (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+  
+  /* Styling for Header Content */
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content block */
+  }
+  
+  /* Hover and Shadow Effects for Headings */
+  .hover-shadow {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover Effect: Change color and increase shadow */
+  .hover-shadow:hover {
+    color: #007BFF; /* Change color on hover */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Styling for the Sign-In Link */
+  .sign-in-link {
+    color: #bd22a3; /* Initial color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Bold text for the link */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover Effect for Sign-In Link */
+  .sign-in-link:hover {
+    color: #93c016; /* Darker blue on hover */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Add shadow effect to the link on hover */
+  }
+  
+/* Header styling */
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-image:url('./FuturisticShip2.png'); /* Slightly lighter than body */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow to the header */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on the header */
+/* Curved Header Style */
+.curved-header {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    max-width: 100%; /* Ensure the header stretches the full width */
+    padding: 15px 0;
+    background-color: #d4d6b7; /* Background color of the header */
+    border-radius: 15px; /* Rounded corners for the header */
+    box-shadow: 0 4px 10px rgba(207, 24, 152, 0.3); /* Initial shadow */
+    margin: 20px auto; /* Center the header with auto margins */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for header */
+  .curved-header:hover {
+    box-shadow: 0 6px 15px rgba(221, 29, 29, 0.7); /* Intensify the shadow on hover */
+    transform: translateY(-5px); /* Slightly move the header upwards on hover */
+  }
+  
+  /* Navigation Grid */
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    gap: 10px;
+    width: 100%;
+    max-width: 800px; /* Set max width for alignment */
+    align-items: center; /* Center items vertically within grid cells */
+  }
+  
+  /* Navigation Item Style */
+  .nav-item {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text horizontally */
+    text-shadow: 2px 2px 4px #2188b8; /* Text shadow for visibility */
+  }
+  
+  /* Link Style */
+  .footer-link {
+    font-weight: bold; /* Bold text for links */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for links */
+  .footer-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-shadow: 0 0 5px rgba(0, 255, 98, 0.5); /* Add a glow effect to the link */
+  }
+  
+/* Main content styling */
+main {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;  
+    flex-grow: 1; /* Ensures main content fills available space */  
+    padding: 20px;  
+}  
+
+/* Fieldset styling */
+fieldset {  
+    border: 2px solid #007BFF; /* Blue border */  
+    border-radius: 10px;  
+    padding: 20px;  
+    margin: 10px 0;  
+    width: 100%;  
+    max-width: 600px; /* Max width for desktop */  
+    background-color: #1d1d1d; /* Background for fieldset */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for fieldset */  
+}  
+
+/* Input and select styling */
+input[type="text"],  
+input[type="email"],  
+input[type="tel"],  
+input[type="date"],  
+input[type="password"],  
+select {  
+    width: calc(100% - 20px); /* Adjust for padding */  
+    padding: 10px;  
+    margin: 5px 0;  
+    border: 1px solid #555; /* Grey border */  
+    border-radius: 5px;  
+    background-color: #2a2a2a; /* Dark background for inputs */  
+    color: white; /* White text */  
+    transition: border 0.3s, box-shadow 0.3s; /* Transition effects */  
+}  
+
+/* Input focus effect */
+input:focus,  
+select:focus {  
+    border: 2px solid #007BFF; /* Blue border on focus */  
+    outline: none; /* Remove default outline */  
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */  
+}  
+
+/* Radio button styling */
+input[type="radio"] {  
+    margin: 0 10px; /* Adjust spacing around radio buttons */
+}  
+
+/* Button styling */
+button {  
+    padding: 10px 20px;  
+    font-size: 1.2em;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #007BFF; /* Button background */  
+    color: white; /* Button text color */  
+    cursor: pointer;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */  
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+/* Button hover effect */
+button:hover {  
+    background-color: #0056b3; /* Darker blue */  
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */  
+}  
+
+/* Button focus effect */
+button:focus {  
+    outline: none; /* Remove outline */  
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5), 0 0 10px rgba(0, 123, 255, 0.25); /* Glow effect */  
+}  
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* To ensure the absolute positioned element is relative to the footer */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Add hover effect */
+  footer:hover {
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Grid container styling */
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 0; /* Adds top margin for spacing */
+  }
+  
+  /* Styling for the circular HUD */
+  .circular-hud {
+    position: fixed; /* Fixed position to stay in the bottom right corner */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    background-color: #555; /* Background color of the circle */
+    border-radius: 50%; /* Make the div circular */
+    display: flex; /* Center the text within the circle */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect */
+  }
+  
+  .circular-hud:hover {
+    background-color: #777; /* Change background color on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+  }
+  
+  /* Footer link styling */
+  .footer-link {
+    text-decoration: none;
+    color: #fff; /* Ensures link is visible on dark background */
+    font-weight: bold; /* Make the link text bold */
+  }
+  
+  
+
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <!-- Header Content with Hover and Shadow Effects -->
+    <div class="header-content">
+        <h1 class="hover-shadow">Bonaventure Assignment 2</h1>
+        <h1 class="hover-shadow">BONAVENTURE IWUNOR</h1>
+        <h3 class="hover-shadow">Student I.D: <b>ALT/SOE/024/0083</b></h3>
+        <h1 class="hover-shadow">Already an AltSchooler? <a href="#" class="sign-in-link">Sign In!</a></h1>
+    </div>
+    </header>
+    <!-- Header with curved rectangle HUD -->
+<header class="curved-header">
+    <!-- Grid container for navigation links -->
+    <div class="nav-grid">
+      <!-- First Column -->
+      <p id class="nav-item">
+        <a href="./index.html" class="curved-header">HOME</a>
+      </p>
+  
+      <!-- Second Column -->
+      <p class="nav-item">
+        <a href="./table.html" class="curved-header">Go To Table</a>
+      </p>
+  
+      <!-- Third Column -->
+      <p class="nav-item">
+        <a href="./media.html" class="curved-header">Go To Media</a>
+      </p>
+  
+      <!-- Fourth Column -->
+      <p class="nav-item">
+        <a href="./contact.html" class="curved-header">CONTACT</a>
+      </p>
+    </div>
+  </header>
+
+    <main>
+        <form action="/submit-registration" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <br><label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                
+                <label for="gender">Gender:</label> 
+                
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" autocomplete="off" value="male">
+                
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" autocomplete="off" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" autocomplete="off" value="other">
+            </br>
+        </br>
+
+                <label for="country">Select your country:</label>
+                <select id="country" name="country">
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+                <option value="cn">China</option>
+                <option value="jp">Japan</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="br">Brazil</option>
+                <option value="za">South Africa</option>
+                <!-- Add more countries as needed -->
+                </select>
+                <br>
+
+                <label for="StateOfResidence" title="Country">State of Residence:</label>
+                <input type="text" id="StateOfResidence" name="state" required>
+                <br>
+
+                <label for="SelectChannel">How do you hear of us:</label>
+                <select id="SelectChannel" name="SelectChannel">
+                <option value="X">X</option>
+                <option value="Fb">Facebook</option>
+                <option value="Linkenin">LinkedIn</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Friend">Friend</option>
+                <!-- Add more options as needed -->
+                </select>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+            </fieldset>
+
+            <p>By clicking Register, I agree to <a href="#">Terms of Use</a> and acknowledge that I
+                have read the <a href="#">Privacy Policy.</a></p>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer text centered -->
+        <p style="margin: 0;">&copy; 2024 V01D. All rights reserved.</p>
+      
+        <!-- Grid container with spacing (if needed for other content) -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; width: 100%; max-width: 800px; margin: 20px auto 0;"> 
+          <!-- Other grid items -->
+          <p style="margin: 0;"></p>
+          <p style="margin: 0;"></p>
+          <p style="margin: 0;"></p>
+          <p style="margin: 0;"></p>
+        </div>
+      
+        <!-- Circular HUD for "TOP" link -->
+        <div class="circular-hud">
+          <a href="./form.html" class="footer-link">TOP</a>
+        </div>
+      </footer>
+</body>
+</html>
